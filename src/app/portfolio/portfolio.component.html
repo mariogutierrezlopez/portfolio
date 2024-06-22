@@ -1,0 +1,25 @@
+<section>
+    <h2>Portfolio</h2>
+    <p class="portfolio-description">Echa un vistado a mis <span>proyectos</span> como programador</p>
+
+    <div class="container">
+        <div class="search-container">
+          <div class="input-container">
+            <input type="text" placeholder="Escribe para buscar...">
+            <button class="filter-button">Filtros</button>
+          </div>
+        </div>
+        
+        <div class="lista-elementos">
+          <div *ngFor="let elemento of elementos" class="elemento">
+            @for (elemento of elementos; track elemento.titulo) {}
+            <h3>{{ elemento.titulo }}</h3>
+            <p>{{ elemento.descripcion }}</p>
+            <div class="etiquetas">
+              <span *ngFor="let etiqueta of elemento.etiquetas" class="etiqueta">{{ etiqueta }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+</section>

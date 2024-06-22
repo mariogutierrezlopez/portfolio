@@ -1,0 +1,129 @@
+section{
+    justify-content: center;
+    height: 100vh;
+    background: #1a1a1a;
+
+}
+
+
+h2 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 1rem; /* Ajuste para separar el título del párrafo */
+    color: #66BE15;
+    letter-spacing: 20px;
+    background: linear-gradient(180deg, rgba(105,187,28,1) 35%, #244209 100%);
+
+    text-align: center;
+
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    
+    text-shadow: rgba($color: #244209, $alpha: 0.5) 0px 0px 10px;
+}
+
+.portfolio-description{
+    margin-top: -50px;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 200;
+    color: white;
+    margin-bottom: 2rem; /* Ajuste para separar el párrafo del contenedor de botones */
+    text-align: center;
+    text-shadow: black 1px 0 10px;
+    font-weight: 400;
+
+    span{
+        color: #66BE15;
+    }
+}
+
+.container {
+    // max-width: 600px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .search-container {
+    margin-bottom: 20px;
+  }
+  
+  .input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+      
+    input {
+        flex: 1;
+        padding: 10px;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+}
+  }
+
+  
+  .input-container button {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 8px 15px;
+    background-color: #66BE15;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .input-container button:hover {
+    background-color: #4CAF50;
+  }
+  
+  .lista-elementos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .elemento {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  .elemento h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .elemento p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .etiquetas {
+    margin-top: 10px;
+  }
+  
+  .etiqueta {
+    display: inline-block;
+    background-color: #e0e0e0;
+    color: #ffffff;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    border-radius: 3px;
+    margin-right: 5px;
+  }
