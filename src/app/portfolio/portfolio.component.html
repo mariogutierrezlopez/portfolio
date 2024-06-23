@@ -4,22 +4,36 @@
 
     <div class="container">
         <div class="search-container">
-          <div class="input-container">
-            <input type="text" placeholder="Escribe para buscar...">
-            <button class="filter-button">Filtros</button>
-          </div>
-        </div>
-        
-        <div class="lista-elementos">
-          <div *ngFor="let elemento of elementos" class="elemento">
-            @for (elemento of elementos; track elemento.titulo) {}
-            <h3>{{ elemento.titulo }}</h3>
-            <p>{{ elemento.descripcion }}</p>
-            <div class="etiquetas">
-              <span *ngFor="let etiqueta of elemento.etiquetas" class="etiqueta">{{ etiqueta }}</span>
+            <div class="input-container">
+                <input type="text" placeholder="Escribe para buscar...">
+                <button class="filter-button"> <i class="bi bi-sliders"></i> Filtros</button>
             </div>
-          </div>
         </div>
-      </div>
+    </div>
+
+    <div class="projects-container">
+        @for (proyecto of proyectos; track proyecto) {
+            <div class="card">
+                <div class="button-container">
+                    <a href="#" class="info-button">Información</a>
+                    <a href="#" class="try-button">Probar proyecto</a>
+                </div>
+                <div class="image">
+                    <!-- <img src="https://via.placeholder.com/150" alt="Imagen de proyecto"> -->
+                </div>
+                <div class="card-content">
+                    <div>
+                        <h3>{{proyecto.titulo}}</h3>
+                        <p>{{proyecto.descripcion}}</p>
+                        <div class="etiquetas">
+                            <span *ngFor="let etiqueta of proyecto.etiquetas; let i = index">
+                                {{etiqueta}}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
       
 </section>

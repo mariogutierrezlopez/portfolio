@@ -1,6 +1,5 @@
-section{
+section {
     justify-content: center;
-    height: 100vh;
     background: #1a1a1a;
 
 }
@@ -10,35 +9,37 @@ h2 {
     font-size: 5rem;
     text-transform: uppercase;
     font-weight: 900;
-    margin-bottom: 1rem; /* Ajuste para separar el título del párrafo */
+    margin-bottom: 1rem;
+    /* Ajuste para separar el título del párrafo */
     color: #66BE15;
     letter-spacing: 20px;
-    background: linear-gradient(180deg, rgba(105,187,28,1) 35%, #244209 100%);
+    background: linear-gradient(180deg, rgba(105, 187, 28, 1) 35%, #244209 100%);
 
     text-align: center;
 
     /* Use the text as a mask for the background. */
     /* This will show the gradient as a text color rather than element bg. */
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
+    -webkit-text-fill-color: transparent;
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
-    
+
     text-shadow: rgba($color: #244209, $alpha: 0.5) 0px 0px 10px;
 }
 
-.portfolio-description{
+.portfolio-description {
     margin-top: -50px;
     font-size: 2rem;
     line-height: 2rem;
     font-weight: 200;
     color: white;
-    margin-bottom: 2rem; /* Ajuste para separar el párrafo del contenedor de botones */
+    margin-bottom: 2rem;
+    /* Ajuste para separar el párrafo del contenedor de botones */
     text-align: center;
     text-shadow: black 1px 0 10px;
     font-weight: 400;
 
-    span{
+    span {
         color: #66BE15;
     }
 }
@@ -48,21 +49,21 @@ h2 {
     width: 80%;
     margin: 0 auto;
     padding: 20px;
-  }
-  
-  .search-container {
+}
+
+.search-container {
     margin-bottom: 20px;
-  }
-  
-  .input-container {
+}
+
+.input-container {
     position: relative;
     display: flex;
     align-items: center;
 
-      
+
     input {
         flex: 1;
-        padding: 10px;
+        padding: 10px 15px;
         font-size: 1rem;
         border: 1px solid #ccc;
         border-radius: 15px;
@@ -70,55 +71,61 @@ h2 {
         -moz-border-radius: 15px;
         -ms-border-radius: 15px;
         -o-border-radius: 15px;
+    }
 }
-  }
 
-  
-  .input-container button {
+
+.input-container button {
     position: absolute;
     right: 0px;
     top: 50%;
     transform: translateY(-50%);
-    padding: 8px 15px;
-    background-color: #66BE15;
+    height: 100%;
+    width: 10%;
+    border-radius: 0 15px 15px 0;
+    font-weight: 500;
+    font-size: 1.2rem;
+    cursor: pointer;
     color: white;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .input-container button:hover {
+    -webkit-border-radius: 0 15px 15px 0;
+    -moz-border-radius: 0 15px 15px 0;
+    -ms-border-radius: 0 15px 15px 0;
+    -o-border-radius: 0 15px 15px 0;
+    background: linear-gradient(180deg, #71C71D 35%, #37610E 100%);
+}
+
+.input-container button:hover {
     background-color: #4CAF50;
-  }
-  
-  .lista-elementos {
+}
+
+.lista-elementos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-  }
-  
-  .elemento {
+}
+
+.elemento {
     background-color: #f9f9f9;
     padding: 15px;
     border-radius: 5px;
-  }
-  
-  .elemento h3 {
+}
+
+.elemento h3 {
     font-size: 1.2rem;
     margin-bottom: 10px;
-  }
-  
-  .elemento p {
+}
+
+.elemento p {
     font-size: 1rem;
     margin-bottom: 10px;
-  }
-  
-  .etiquetas {
+}
+
+.etiquetas {
     margin-top: 10px;
-  }
-  
-  .etiqueta {
+}
+
+.etiqueta {
     display: inline-block;
     background-color: #e0e0e0;
     color: #ffffff;
@@ -126,4 +133,125 @@ h2 {
     font-size: 0.9rem;
     border-radius: 3px;
     margin-right: 5px;
-  }
+}
+
+.card {
+    background-color: #D5D5D5;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    /*Añadidoparaposicionarlosbotonesrelativamente*/
+    height: 400px;
+    //overflow: hidden;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+
+
+
+    .card-content {
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .image {
+        width: 100%;
+        height: 60%;
+        background-color: gray;
+        border-radius: 15px 15px 0 0;
+        -webkit-border-radius: 15px 15px 0 0;
+        -moz-border-radius: 15px 15px 0 0;
+        -ms-border-radius: 15px 15px 0 0;
+        -o-border-radius: 15px 15px 0 0;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        font-weight: 900;
+        margin-bottom: 5px;
+    }
+
+    p {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    .button-container {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        top: -15px;
+        left: 0%;
+        justify-content: space-evenly;
+        width: 100%;
+        align-items: center;
+    }
+
+    .info-button {
+        background-color: #69BB1C;
+        color: white;
+        padding: 5px 20px;
+        border-radius: 15px;
+        text-decoration: none;
+        text-align: center;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+    }
+
+    .try-button {
+        background: linear-gradient(180deg, #383838 35%, #1B1B1B 100%);
+        color: white;
+        padding: 5px 20px;
+        border-radius: 15px;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .card-content {
+        flex: 1;
+        /* El contenido de la tarjeta ocupa todo el espacio restante */
+        height: 45%;
+    }
+
+    .etiquetas {
+        margin-top: 10px;
+        display: flex;
+        justify-content: flex-start;
+        gap: 5px;
+
+        span {
+            padding: 5px 10px;
+            border: solid 1.9px black;
+            border-radius: 5px;
+            font-weight: 500;
+            font-size: 1rem;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+        }
+    }
+}
+
+.projects-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 90%;
+    margin: 0 auto;
+}
